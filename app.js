@@ -111,7 +111,16 @@ else if(opcionMenu==2){
 
 }
 else if(opcionMenu==3){
-    cuenta = prompt("¿Que cuenta desea verificar?")
+    cuenta = Number(prompt("¿Que cuenta desea verificar?"));
+    if (cuenta == cuenta1){
+        alert (`La cuenta ${cuenta1} posee ${saldo1}`);
+    }
+    else if(cuenta == cuenta2){
+        alert (`La cuenta ${cuenta2} posee ${saldo2}`);
+    }
+    else{
+        alert("La cuenta ingresada no existe");
+    }
 }
 else{
     alert ("Opcion no valida")
